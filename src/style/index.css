@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: rgb(248, 249, 250);
+}
+
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 256px;
+    min-width: 256px;
+    border-radius: 16px;
+    box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.05);
+    background: rgb(255, 255, 255);
+    margin: 20px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.main {
+    /* background-color: red; */
+    width: 100%;
+    margin-right: 20px;
+}
+
+.header {
+    height: 45px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.05);
+    background: rgb(255, 255, 255);
+    padding: 24px 15px;
+}
+
+.content {
+    padding: 0 15px;
+    height: calc(100vh - 105px);
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+
+.spinner {
+    width: 100%;
+    height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(50, 49, 49, 0.1)
+}
+
+.page-header {
+    height: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.page-header-title {
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 30px;
+    color: #555
+}
+
+.add-btn {
+    background: linear-gradient(to bottom right, #cb0c9f, #7928ca);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px -1px #00000012, 0 4px 7px -1px #0000001c;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    height: 40px;
+    letter-spacing: -.332px;
+    outline: 0;
+    transition: all .2s;
+    width: 60px;
+}
+
+@import "login.css";
+@import "header.css";
+@import "sidebar.css";
+@import "course.css";
+@import "reception.css";
+@import "teacher.css";
+@import "home.css"
